@@ -1,0 +1,23 @@
+DDA Algorithm
+{
+dx = x2 - x1
+dy = y2 - y1
+
+if(abs(dx) > abs(dy))
+{
+step = dx;
+}
+else
+{
+step = dy;
+}
+xn = dx/step;
+yn = dy/step;
+for(i=0; i<=step; i++)
+{
+putpixel(X1, Y1, RED);
+X1 = X1 + xn;
+Y1 = Y1 + yn;
+}
+}
+
